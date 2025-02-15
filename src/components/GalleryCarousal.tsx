@@ -8,15 +8,7 @@ import { photo1, photo2, photo3, photo4, photo5 } from "@/Constants";
 export function GalleryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
-  const images = [
-   photo1,
-   photo2,
-   photo3,
-   photo4,
-   photo5
-  ];
+  const images = [photo1, photo2, photo3, photo4, photo5];
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -27,14 +19,15 @@ export function GalleryCarousel() {
   };
 
   return (
-    <section className="bg-white py-20 mx-40">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-begin mb-12">
+    <section className="bg-white py-20">
+      <div className="container  ">
+   
+        <h2 className="text-3xl font-bold text-center lg:text-start mb-12">
           School Life Gallery
         </h2>
 
         <div className="relative overflow-hidden rounded-xl">
-          {/* Carousel Container */}
+      
           <div
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -53,7 +46,6 @@ export function GalleryCarousel() {
             ))}
           </div>
 
-          {/* Navigation Arrows */}
           <Button
             variant="ghost"
             size="icon"
@@ -84,8 +76,6 @@ export function GalleryCarousel() {
             ))}
           </div>
         </div>
-
-     
       </div>
     </section>
   );

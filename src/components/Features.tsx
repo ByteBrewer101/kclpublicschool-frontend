@@ -1,13 +1,11 @@
-
 import { Marquee } from "./magicui/marquee";
 import StaffCard from "./StaffCard";
 import { photo1 } from "@/Constants";
 
-
 const staffMembers = [
   {
     id: 1,
-    imageUrl: {photo1},
+    imageUrl: photo1,
     title: "John Doe",
     description: "Senior Web Developer with 5+ years of experience.",
   },
@@ -33,18 +31,21 @@ const staffMembers = [
 
 export function Features() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-center p-10">
-      <div className="w-4/5">
-        <h1 className="font-bold text-3xl mb-6 text-start">Meet Our Staff</h1>
-
+    <div className="flex flex-col w-full mt-12">
+     
+     
+        <h1 className="font-bold text-3xl mb-6 text-center lg:text-start">Meet Our Esteemed Staff</h1>
+     
+     
+      <div className="w-full overflow-hidden">
         <Marquee pauseOnHover className="py-8">
           {staffMembers.map((staff) => (
-            <div key={staff.id} className="w-[300px] h-[400px]">
+            <div key={staff.id} className="w-[300px] h-[400px] mx-4">
               <StaffCard
-                      title={"Dr. Michael Chen"}
-                      description="Neurology Specialist, PhD in Cognitive Science"
-                      imageUrl={photo1}
-                />
+                title={staff.title}
+                description={staff.description}
+                imageUrl={photo1}
+              />
             </div>
           ))}
         </Marquee>

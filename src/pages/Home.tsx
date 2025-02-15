@@ -1,31 +1,41 @@
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Features } from "../components/Features";
-
 import { GalleryCarousel } from "@/components/GalleryCarousal";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import StaffPanel from "@/components/StaffPanel";
-
 import { wlogo } from "@/Constants";
 
 export function Home() {
   return (
-    <div className="min-h-screen flex flex-col  ">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 ">
+
+      <main className="flex-1">
         <Hero />
-        <Features />
-        <GalleryCarousel />
-        <div className="w-full" >
-          <StaffPanel />
+        <div className="mx-0 lg:mx-40">
+          <Features />
+
+          <GalleryCarousel />
+
+         
+            <StaffPanel />
+          
+
+          <Contact />
         </div>
 
-        <Contact />
-        <button className="fixed bottom-20 right-10 m-4 w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-white shadow-xl rounded-full flex ">
-          <img src={wlogo} className="rounded-full" />
+        <button className="fixed bottom-8 right-4 md:bottom-10 md:right-8 z-50 w-14 h-14 md:w-16 md:h-16 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200">
+          <img
+            src={wlogo}
+            alt="WhatsApp"
+            className="rounded-full w-full h-full object-cover p-2 md:p-3"
+          />
         </button>
       </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
