@@ -17,10 +17,13 @@ export function Home() {
         <Hero />
         <Features />
         <GalleryCarousel />
-        <StaffPanel />
+        <div className="w-full" >
+          <StaffPanel />
+        </div>
+
         <Contact />
         <button className="fixed bottom-20 right-10 m-4 w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-white shadow-xl rounded-full flex ">
-          <img src={wlogo} className="rounded-full"  />
+          <img src={wlogo} className="rounded-full" />
         </button>
       </main>
       <Footer />
