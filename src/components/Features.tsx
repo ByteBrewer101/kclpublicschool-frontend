@@ -1,4 +1,4 @@
-import * as React from "react";
+
 import { Marquee } from "./magicui/marquee";
 import StaffCard from "./StaffCard";
 import { photo1 } from "@/Constants";

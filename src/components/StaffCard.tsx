@@ -1,5 +1,5 @@
 import { Card } from "./ui/card";
-
+//@ts-expect-error
 export default function StaffCard({ imageUrl, title, description }) {
   return (
     <Card className="overflow-hidden  transition-all ease-in-out duration-200 hover:shadow-xl ">
