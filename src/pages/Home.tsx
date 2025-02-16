@@ -5,7 +5,7 @@ import { GalleryCarousel } from "@/components/GalleryCarousal";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import StaffPanel from "@/components/StaffPanel";
-import { wlogo } from "@/Constants";
+import { WhatsappNumber, wlogo } from "@/Constants";
 
 export function Home() {
   return (
@@ -18,15 +18,17 @@ export function Home() {
           <Features />
 
           <GalleryCarousel />
-
-         
+        
             <StaffPanel />
-          
+         
 
           <Contact />
         </div>
 
-        <button className="fixed bottom-8 right-4 md:bottom-10 md:right-8 z-50 w-14 h-14 md:w-16 md:h-16 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200">
+        <button
+          onClick={() => window.open(`https://wa.me/${WhatsappNumber}`)}
+          className="fixed bottom-8 right-4 md:bottom-10 md:right-8 z-50 w-14 h-14 md:w-16 md:h-16 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200"
+        >
           <img
             src={wlogo}
             alt="WhatsApp"

@@ -8,7 +8,7 @@ import ph4 from "../assets/photo4.jpg"
 import ph5 from "../assets/photo5.jpg"
 
 
-import log1 from "../assets/logo.jpeg"
+import log1 from "../assets/logo.png"
 import heroimg from "../assets/heroImage.jpg"
 import logow from "../assets/whatsapp.png"
 
@@ -24,3 +24,18 @@ export const photo5 = ph5
 export const heroImg = heroimg
 export const logo = log1
 export const wlogo = logow
+
+
+
+
+export const backendUrl = "http://localhost:5000/api"
+export const WhatsappNumber = "9250800822"
+
+
+
+
+
+
+
+
+

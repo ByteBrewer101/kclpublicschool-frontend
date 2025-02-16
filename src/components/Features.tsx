@@ -31,7 +31,7 @@ const staffMembers = [
 
 export function Features() {
   return (
-    <div className="flex flex-col w-full mt-12">
+    <div className="flex flex-col w-full mt-12" id="about">
      
      
         <h1 className="font-bold text-3xl mb-6 text-center lg:text-start">Meet Our Esteemed Staff</h1>

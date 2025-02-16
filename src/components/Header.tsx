@@ -23,10 +23,10 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <a  >About</a>
-          <a  >Programs</a>
-          <a  >Admissions</a>
-          <a  >News</a>
+          <a href="#about" >About</a>
+          <a href={"#gallery"} >Gallery</a>
+        
+          <a  >Enquire</a>
           <a  href={"#contact"} >Contact</a>
         </div>
 

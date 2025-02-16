@@ -8,7 +8,7 @@ export function Hero() {
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black backdrop-blur-sm  bg-opacity-50"></div>
 
       {/* Content */}
       <div className="h-full container flex flex-col items-center justify-center mx-auto px-4 text-center relative z-10">

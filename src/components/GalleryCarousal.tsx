@@ -1,14 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { photo1, photo2, photo3, photo4, photo5 } from "@/Constants";
+import { backendUrl } from "@/Constants";
+import axios from "axios";
+// import { photo1, photo2, photo3, photo4, photo5 } from "@/Constants";
 
 export function GalleryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [photo1, photo2, photo3, photo4, photo5];
+  //const images = [photo1, photo2, photo3, photo4, photo5];
+
+  const [images,setImages]=useState([]);
+
+useEffect(()=>{
+
+  async function CallImages(){
+    const response = await axios.get(`${backendUrl}/getphotos`)
+   
+      setImages(response.data)
+    }
+
+
+  CallImages()
+    
+  
+
+
+},[])
+
+
+
+
+
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -19,7 +44,7 @@ export function GalleryCarousel() {
   };
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20" id="gallery">
       <div className="container  ">
    
         <h2 className="text-3xl font-bold text-center lg:text-start mb-12">
@@ -38,7 +63,8 @@ export function GalleryCarousel() {
                 className="w-full flex-shrink-0 aspect-video bg-gray-100"
               >
                 <img
-                  src={image}
+                //@ts-expect-error
+                  src={image.url}
                   alt={`School activity ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
