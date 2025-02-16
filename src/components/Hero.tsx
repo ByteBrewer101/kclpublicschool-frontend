@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { heroImg } from "@/Constants";
 
+import { SparklesText } from "./magicui/sparkles-text";
+
 export function Hero() {
   return (
     <section
@@ -16,14 +18,13 @@ export function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           KCL Public School
         </h1>
-
         {/* Description */}
         <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
           Preparing students for success in a changing world through innovative
           learning and character development.
         </p>
-
-        {/* Button */}
+        
+        <SparklesText  className=" text-3xl lg:text-5xl  text-yellow-500" text=" Registration is free for 2025-26 Hurry up!!" />;{/* Button */}
         <Button variant="outline" size="lg" className="text-lg">
           Apply Now
         </Button>

@@ -1,4 +1,5 @@
-export const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d5a32fd5f7b!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1690834240773!5m2!1sen!2sus"
+
+export const mapUrl="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3563.85027007868!2d82.03670517543272!3d26.717229976764287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQzJzAyLjAiTiA4MsKwMDInMjEuNCJF!5e0!3m2!1sen!2sin!4v1739714753706!5m2!1sen!2sin"
 
 
 import ph1 from "../assets/photo1.jpg"
@@ -28,7 +29,7 @@ export const wlogo = logow
 
 
 
-export const backendUrl = "http://localhost:5000/api"
+export const backendUrl = "http://4.240.73.13:5000/api";
 export const WhatsappNumber = "9250800822"
 
 

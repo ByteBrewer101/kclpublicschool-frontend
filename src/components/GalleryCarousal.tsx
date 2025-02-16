@@ -18,7 +18,7 @@ useEffect(()=>{
 
   async function CallImages(){
     const response = await axios.get(`${backendUrl}/getphotos`)
-   
+   //@ts-expect-error
       setImages(response.data)
     }
 

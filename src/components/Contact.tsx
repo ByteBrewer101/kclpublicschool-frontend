@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+
 import { mapUrl } from "@/Constants";
 
 export function Contact() {
@@ -18,46 +15,15 @@ export function Contact() {
 
         {/* Grid for Form and Map */}
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="space-y-6">
-            {/* Name and Email Fields */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Enter your name" required />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Subject Field */}
-            <div className="space-y-2">
-              <Label htmlFor="subject">Subject</Label>
-              <Input id="subject" placeholder="Enter subject" />
-            </div>
-
-            {/* Message Field */}
-            <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                placeholder="Enter your message"
-                className="min-h-[150px]"
-                required
-              />
-            </div>
-
-            {/* Submit Button */}
-            <Button className="w-full" type="submit">
-              Send Message
-            </Button>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSerBSTgQZ3v8hzNjorzDbAhOEKwlwn_qx1p_GPs7IhMop1zWA/viewform?embedded=true"
+              width="640"
+              height="382"
+           
+            >
+              Loading…
+            </iframe>
           </div>
 
           {/* Map Section */}
