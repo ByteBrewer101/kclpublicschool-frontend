@@ -17,10 +17,9 @@ export function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSerBSTgQZ3v8hzNjorzDbAhOEKwlwn_qx1p_GPs7IhMop1zWA/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdLvmQtWKVvQ9Xgqla9FTBv7hJiVbJBdlyf4ynEagyv5JMpLw/viewform?usp=dialog"
               width="640"
               height="382"
-           
             >
               Loading…
             </iframe>

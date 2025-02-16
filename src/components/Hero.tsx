@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { heroImg } from "@/Constants";
+import { FormLink, heroImg } from "@/Constants";
 
 import { SparklesText } from "./magicui/sparkles-text";
 
@@ -10,7 +10,7 @@ export function Hero() {
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black backdrop-blur-sm  bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black backdrop-blur-[2px]  bg-opacity-50"></div>
 
       {/* Content */}
       <div className="h-full container flex flex-col items-center justify-center mx-auto px-4 text-center relative z-10">
@@ -25,7 +25,7 @@ export function Hero() {
         </p>
         
         <SparklesText  className=" text-3xl lg:text-5xl  text-yellow-500" text=" Registration is free for 2025-26 Hurry up!!" />;{/* Button */}
-        <Button variant="outline" size="lg" className="text-lg">
+        <Button onClick={()=>window.open(FormLink)} variant="outline" size="lg" className="text-lg">
           Apply Now
         </Button>
       </div>

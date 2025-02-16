@@ -1,30 +1,36 @@
 import { Marquee } from "./magicui/marquee";
 import StaffCard from "./StaffCard";
-import { photo1 } from "@/Constants";
+import { photo3,photo4,photo5,photo1,photo2 } from "@/Constants";
 
 const staffMembers = [
   {
     id: 1,
-    imageUrl: photo1,
-    title: "John Doe",
+    imageUrl: photo3,
+    title: "Chhote Lal Yadav",
     description: "Senior Web Developer with 5+ years of experience.",
   },
   {
     id: 2,
-    imageUrl: "/images/staff2.jpg",
-    title: "Jane Smith",
+    imageUrl: photo4,
+    title: "Krishna Yadav",
     description: "UI/UX Designer specializing in modern web interfaces.",
   },
   {
     id: 3,
-    imageUrl: "/images/staff3.jpg",
-    title: "Michael Brown",
+    imageUrl: photo5,
+    title: "Pankaj Kumar Yadav",
     description: "Mobile App Developer focused on React Native solutions.",
   },
   {
     id: 4,
-    imageUrl: "/images/staff4.jpg",
-    title: "Emily White",
+    imageUrl: photo1,
+    title: "Deepak Kumar Yadav",
+    description: "Project Manager ensuring seamless workflow and success.",
+  },
+  {
+    id: 5,
+    imageUrl: photo2,
+    title: "Neeraj Kumar Yadav",
     description: "Project Manager ensuring seamless workflow and success.",
   },
 ];
@@ -34,7 +40,7 @@ export function Features() {
     <div className="flex flex-col w-full mt-12" id="about">
      
      
-        <h1 className="font-bold text-3xl mb-6 text-center lg:text-start">Meet Our Esteemed Staff</h1>
+        <h1 className="font-bold text-3xl mb-6 text-center lg:text-start">Meet Our Esteemed Administration</h1>
      
      
       <div className="w-full overflow-hidden">
@@ -44,7 +50,7 @@ export function Features() {
               <StaffCard
                 title={staff.title}
                 description={staff.description}
-                imageUrl={photo1}
+                imageUrl={staff.imageUrl}
               />
             </div>
           ))}

@@ -1,3 +1,5 @@
+import { FormLink, WhatsappNumber } from "@/Constants";
+
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -17,16 +19,23 @@ export function Footer() {
               </li>
             ))} */}
 
-            <a href="">Whatsapp</a>
-            <a href="">Email</a>
-            <a href="">Admission Form</a>
+            <button
+              className="text-start"
+              onClick={() => window.open(`https://wa.me/${WhatsappNumber}`)}
+            >
+              Whatsapp
+            </button>
+            <a href="mailto:kclpublicschoolayodhya@gmail.com">Email</a>
+            <a href={FormLink}>Admission Form</a>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold mb-4">Contact</h4>
-          <p className="text-gray-400">123 Education Blvd</p>
-          <p className="text-gray-400">info@academyhigh.edu</p>
-          <p className="text-gray-400">(555) 123-4567</p>
+          <p className="text-gray-400">
+            Sirhir Narsinghpur, Ayodhya, Uttar Pradesh, 224001
+          </p>
+          <p className="text-gray-400">kclpublicschoolayodhya@gmail.com</p>
+          <p className="text-gray-400">{WhatsappNumber}</p>
         </div>
       </div>
       <div className="text-center mt-8 pt-8 border-t border-gray-800">

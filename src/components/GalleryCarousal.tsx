@@ -3,16 +3,23 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { backendUrl } from "@/Constants";
+import { backendUrl, slidep1, slidep2, slidep3, slidep4, slidep5 } from "@/Constants";
 import axios from "axios";
 // import { photo1, photo2, photo3, photo4, photo5 } from "@/Constants";
 
 export function GalleryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
-  //const images = [photo1, photo2, photo3, photo4, photo5];
+  const defimages = [
+    { url: slidep1 },
+    { url: slidep2 },
+    { url: slidep3 },
+    { url: slidep4 },
+    { url: slidep5 },
+  ];
 
-  const [images,setImages]=useState([]);
+  const [images,setImages]=useState(defimages);
 
 useEffect(()=>{
 

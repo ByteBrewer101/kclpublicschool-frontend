@@ -4,11 +4,13 @@ export default function StaffCard({ imageUrl, title, description }) {
   return (
     <Card className="overflow-hidden  transition-all ease-in-out duration-200 hover:shadow-xl ">
       {/* Image at the top */}
-      <img
-        src={imageUrl}
-        alt={title}
-        className="w-full h-auto object-cover rounded-t-lg"
-      />
+      <div className="aspect-square overflow-hidden ">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="object-cover rounded-t-lg aspect-content"
+        />
+      </div>
 
       {/* Content container */}
       <div className="p-4">
@@ -16,7 +18,7 @@ export default function StaffCard({ imageUrl, title, description }) {
         <h3 className="text-xl font-bold mb-2">{title}</h3>
 
         {/* Description */}
-        <p className="text-gray-600 text-base">{description}</p>
+        {/* <p className="text-gray-600 text-base">{description}</p> */}
       </div>
     </Card>
   );
