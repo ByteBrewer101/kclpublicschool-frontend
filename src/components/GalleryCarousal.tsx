@@ -70,7 +70,7 @@ useEffect(()=>{
                 className="w-full flex-shrink-0 aspect-video bg-gray-100"
               >
                 <img
-                //@ts-expect-error
+               
                   src={image.url}
                   alt={`School activity ${index + 1}`}
                   className="w-full h-full object-cover"
